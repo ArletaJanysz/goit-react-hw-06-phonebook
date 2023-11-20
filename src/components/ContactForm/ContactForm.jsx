@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import '../ContactForm/ContactForm.css';
+
+import { addContact } from 'redux/actions';
 
 class ContactForm extends Component {
   state = {
@@ -18,8 +21,9 @@ class ContactForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const { name, number } = this.state;
+    const { contacts } = this.props;
 
-    if (this.props.contacts.some(contact => contact.name === name)) {
+    if (contacts.some(contact => contact.name === name)) {
       alert(`${name} is already in contacts.`);
       return;
     }
@@ -74,4 +78,12 @@ ContactForm.propTypes = {
   ).isRequired,
 };
 
-export default ContactForm;
+const mapStateToProps = state => ({
+  contacts: state.contacts,
+});
+
+const mapDispatchToProps = {
+  addContact,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);
