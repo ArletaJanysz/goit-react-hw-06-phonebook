@@ -1,0 +1,28 @@
+.delete-btn {
+  border-radius: 20px;
+  border: 1px solid rgb(80, 9, 9);
+  padding: 5px;
+  font-weight: bold;
+  width: 20%;
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(247, 25, 25);
+  margin-left: 5px;
+  font-size: 12px;
+  transition: transform 0.2s;
+  color: rgb(221, 217, 217);
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+.contacts-list {
+  max-width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-item {
+  padding: 5px 0;
+}

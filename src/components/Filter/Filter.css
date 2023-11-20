@@ -1,0 +1,9 @@
+
+
+.filter-input {
+  border: 1px solid rgb(151, 151, 151);
+  box-shadow: 5px 5px 10px;
+  padding: 3%;
+  width: 50%;
+  background-color: rgb(212, 212, 212);
+}

@@ -1,0 +1,28 @@
+form {
+  margin-bottom: 30px;
+}
+
+.phonebook-input {
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  width: 90%;
+}
+
+.phonebook-btn {
+  border-radius: 20px;
+  border: 1px solid rgb(9, 80, 27);
+  padding: 5%;
+  font-weight: bold;
+  width: 70%;
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(90, 248, 130);
+  margin-top: 5px;
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+.phonebook-btn:hover {
+  transform: scale(1.1);
+}
