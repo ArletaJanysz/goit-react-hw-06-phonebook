@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { connect } from 'react-redux';
-import { removeContact } from '../actions';
+import { removeContact } from 'redux/actions';
 
 import PropTypes from 'prop-types';
 
